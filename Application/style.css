@@ -1,0 +1,82 @@
+.application_contaner, .application_contaner .application_background {
+  width: 990px;
+  height: 595px;
+  position: fixed;
+  top: 10px; }
+
+.application_contaner {
+  position: fixed; }
+  .application_contaner .application_background {
+    background-color: black;
+    opacity: .5; }
+  .application_contaner .contaner, .application_contaner .contaner .Background {
+    top: 60px;
+    position: relative;
+    color: black;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border-radius: 30px;
+    padding-top: 20px; }
+  .application_contaner .contaner .Background {
+    position: fixed;
+    background-color: white;
+    opacity: .8; }
+  .application_contaner .contaner .Application_header {
+    position: relative;
+    left: 34%; }
+  .application_contaner .contaner .paragraph {
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    width: 30%;
+    text-align: left;
+    color: #3a3939; }
+  .application_contaner .contaner .iphone {
+    position: absolute;
+    height: 73%;
+    top: 70px;
+    left: 50px; }
+  .application_contaner .contaner .samsong {
+    position: absolute;
+    height: 76%;
+    top: 60px;
+    left: 63%; }
+  .application_contaner .contaner .samsong_screen {
+    position: absolute;
+    height: 20%;
+    top: 42%;
+    left: 80.4%; }
+  .application_contaner .contaner .iphone_screen {
+    position: absolute;
+    height: 20%;
+    top: 42%;
+    left: 11.5%; }
+  .application_contaner .contaner .android {
+    position: absolute;
+    height: 23%;
+    width: 12%;
+    top: 50%;
+    left: 58%; }
+  .application_contaner .contaner .ios {
+    position: absolute;
+    height: 21%;
+    top: 51.5%;
+    left: 35.4%; }
+  .application_contaner .contaner .Application_button {
+    position: absolute;
+    height: 9.5%;
+    top: 75%;
+    left: 33.6%;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: black;
+    width: 15%;
+    font-weight: 700; }
+    .application_contaner .contaner .Application_button:hover {
+      background-color: red;
+      color: white; }
+  .application_contaner .contaner .google_play {
+    left: 56.5%; }
+
+/*# sourceMappingURL=style.css.map */

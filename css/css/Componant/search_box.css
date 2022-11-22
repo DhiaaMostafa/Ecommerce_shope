@@ -1,0 +1,12 @@
+.panel-search_box-section .filter_search_box_ {
+  z-index: 1;
+  padding: 0px 10px 0px 35px;
+  position: absolute;
+  height: 44px;
+  width: 95%;
+  margin: 0px auto;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  display: block; }
+
+/*# sourceMappingURL=search_box.css.map */

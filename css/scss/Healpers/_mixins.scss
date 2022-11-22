@@ -1,0 +1,122 @@
+//==================
+//= overlay Mixins =
+//==================
+
+@mixin overlay {             //! ?????
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+}
+
+//======================
+//= Defulte Font Style =
+//======================
+
+@mixin font_line {                 //!Make another mixins
+	font:{
+		weight: $main_font_weight;
+		size: $main_font_size;
+		family: $font_family;
+	}
+	//letter-spacing: 0;          //!
+}
+
+@mixin perfixer($property,$value,$properties:()) //$properties -> prefixes
+{
+	@each $prefix in $properties {
+		#{'-'+ $prefix + '-'+$property}:$value;
+	}
+#{$property}:$value;
+}
+
+//=====================
+//= translation Mixin =
+//=====================
+
+@mixin transition($args: all 0.3s ease 0s) { //-.Translation
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+//=======================
+//= border-radius Mixin =
+//=======================
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+
+//====================
+//= transform Mixin=
+//====================
+
+@mixin transform($transform) {
+	-webkit-transform: $transform;
+	-moz-transform: $transform;
+	-ms-transform: $transform;
+	-o-transform: $transform;
+	transform: $transform;
+}
+
+
+//=================================================
+//= Risponsive Mixin                              =
+//=================================================
+
+//================================
+//= wide_screen Layout: 1280px Mixin =                           =
+//================================
+
+@mixin wide_screen {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+
+//================================
+//= laptop_screen Layout: 320px Mixin =                           =
+//================================
+
+@mixin laptop_screen {
+	@media (min-width: 992px) and (max-width: 1200px){
+		@content;
+	}
+}
+
+//====================================
+//= Wide laptop_screen Layout: 480px Mixin =                           =
+//====================================
+
+@mixin small_laptop_screen {
+	@media (min-width: 768px)and (max-width: 992px){
+		@content;
+	}
+}
+
+//======================================
+//= ipad_screen Layout max-width: 767px Mixin =                           =
+//======================================
+
+@mixin ipad_screen {
+	@media(max-width: 767px) {
+		@content;
+	}
+}
+
+//======================================
+//= laptop_screen_screen Layout max-width: 500px Mixin                      
+//======================================
+
+@mixin laptop_screen_screen {
+	@media(max-width: 500px) {
+		@content;
+	}
+}

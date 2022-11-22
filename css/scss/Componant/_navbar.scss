@@ -1,0 +1,318 @@
+//======================================================
+//= navbar container:                                  =
+//======================================================
+
+.navbar {
+	@include font_line;      //!!!!!!!!!
+	padding-top: 35px;
+	list-style: none;
+	width: 100%;
+    
+	//=================================================== 
+	//= navbar Elements:                                =
+	//===================================================
+
+	%navbar_elements_atribute{
+		text-shadow:$text_shadow;  	
+		//*New
+		&:hover{
+			color: $navbar_text_color_hover;
+		}
+	}
+	.navbar_elements {
+		float:  $left;
+		color: $navbar_text_color;
+		margin: map-get($arrayyleft, element_margin);  // دالة تقوم بستدعاء البيانات من المصفوفة
+		//margin-#{$left}: 30px;
+		text-transform: capitalize;
+		@extend %navbar_elements_atribute;
+		//text-decoration: none;                  //??????
+		/*.active:hover {                         //?????????
+			color: $navbar_text_color_hover;
+		}*/
+	}
+
+	.navbar_icons{ 
+		//margin-#{$left}: 38px;	
+		color: $navbar_text_color; 
+		margin: map-get($arrayyleft, element_margin);
+		@extend %navbar_elements_atribute;
+	}
+
+	.right_navbar{
+		margin-top: 1px;
+		@include small_laptop_screen
+		{
+			display: none;
+		};
+	  @include ipad_screen
+		{
+			display: none;
+	
+		};
+
+	}
+
+    .icons_direction{
+		float:  $left; 
+	}
+	.men_element, .women_element{
+		&:hover {
+			.men_dropdown_list,.women_dropdown_list {display: block;
+				@include small_laptop_screen
+				{
+					display: none;
+				};
+			  @include ipad_screen
+				{
+					display: none;
+			
+				};
+			}
+		}
+	}
+
+	.women_element{
+		&:hover {
+			.women_dropdown_list {display: block;
+				@include small_laptop_screen
+				{
+					display: none;
+			
+				};
+			  @include ipad_screen
+				{
+					display: none;
+			
+				};
+			}
+		}
+	}
+	
+	.language__element{
+		&:hover{
+			.language_dropdown_list{display: block};
+		}
+	}
+
+	.ti-angle-down{
+		padding-#{$left}: 8px;
+
+	}
+	//===================================================
+	//= Drop lists:                                     =
+	//===================================================
+     // dropdown list 
+	.dropdown_list{
+		width: 187px;
+		position: fixed;               //! Convert to absolute
+		top: 65px;
+		display: none;                
+		background-color: white;
+		border: 1px solid rgb(180, 176, 176);
+		border-radius: 5px;
+		a{
+			span{
+				padding: 4px 16px;
+			&:hover {
+				border-#{$left}: 5px solid red;
+				}
+			}
+		}
+			@include small_laptop_screen
+			{
+				display: none;
+
+			};
+	     	@include ipad_screen
+			{
+				display: none;
+
+			};
+		//text-decoration: none;          //????????
+		//z-index: 2000;                  //????????
+		a {
+			font:{                        //!!!!!!!!
+				size: $second_font_size;
+				weight: $second_font_weight;
+			}
+			color: black;
+			padding: 14px 0px;
+			display: block;
+			text-align: $text_align_left;
+			border-top: .3px solid rgb(209, 203, 203);
+			
+		}
+	}
+	
+	.men_dropdown_list{
+		#{$left}:  230px;
+	}
+
+	.women_dropdown_list{
+		#{$left}: 298px;
+	
+	}
+	     // dropdown list language
+	.language_dropdown_list{
+		right:3.5px;
+		width:100px;
+		text-shadow:0 0 0;  
+		color: black;
+		.lang_radio{
+			margin: 6px;
+			
+		}
+		font:{                             //!!!!!!!!
+			size: $second_font_size;
+			weight: $second_font_weight;
+		}
+	}
+	
+
+}
+
+//-----------------------------------
+//   risponsive_header   within image and small button
+.risponsive_header
+{
+	@include small_laptop_screen
+	{
+		width: 100%;
+		height: 63px;
+
+	};
+  @include ipad_screen
+	{
+		width: 100%;
+		height: 63px;
+	};
+}
+
+// navber 
+//======================================================
+//= navbar container:   risponsive                               =
+//======================================================
+.navbar
+{
+	@include small_laptop_screen
+	{
+		display: none;
+
+	};
+  @include ipad_screen
+	{
+		display: none;
+
+	};
+
+	//=================================================== 
+	//= navbar Elements:    risponsive  li                             =
+	//===================================================
+
+	li{
+		@include small_laptop_screen
+		{
+			//padding: 8px 0px;
+            text-align: $text_align_left;
+		};
+		@include ipad_screen
+		{
+			//padding: 8px 0px;
+			text-align: $text_align_left;
+		};
+	}
+
+     //=================================================== 
+	//= risponsive navbar Elements:                                   =
+	//===================================================
+
+   .navbar_elements {
+		@include wide_screen
+			{
+				float:  $left;
+			};
+		@include laptop_screen
+			{
+				float:  $left;
+			};
+		@include small_laptop_screen
+			{
+			float: none;
+			max-width: 100%;
+			padding: 0;
+			text-align: $text_align_left;
+			};
+		@include ipad_screen
+			{
+				float: none;
+				max-width: 100%;
+				padding: 0;
+				text-align: $text_align_left;
+			};
+	}
+}
+
+
+    //=================================================== 
+	//= visibility: laptop_screen                                   =
+	//===================================================
+
+.visble-laptop_screen
+{
+	@include wide_screen
+	{ 
+		display: none;
+	};
+@include laptop_screen
+	{
+		display: none;
+	};
+@include small_laptop_screen
+	{
+		display: block;
+	};
+@include ipad_screen
+	{
+		display: block;
+	};
+}
+   //=================================================== 
+	//=  navber-icon                               =
+	//===================================================
+
+
+.navber-icon
+{
+	float: $right;
+	//padding-#{$right}: 25px;
+	list-style: none;
+
+	@include small_laptop_screen
+	{
+		display: none;
+	};
+    @include ipad_screen
+	{
+		display: none;
+	};
+	li {
+		
+		i,a{
+			color: $navbar_text_color;
+		}
+	}
+}
+
+.icon-smallscrean-visible
+{
+	font-size: 24px;
+    float: $right;
+    color: white;
+	margin: 22px 16px 22px 5px;
+
+}
+
+ul{
+	list-style: none;
+}

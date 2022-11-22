@@ -1,0 +1,65 @@
+include HTML/pug/mixin.pug
+html
+  head
+    include HTML/pug/linker.pug
+  body
+    // start header
+    - var elements=['featured' ,'featured','featured', 'daily_deals' , 'daily_deals' ,'best_seller', 'sala_top', 'rate','rate']
+    - var elemention=['featured' , 'daily_deals' ,'best_seller', 'sala_top', 'rate']
+    
+    div(class="header")
+    // end header
+    //- start section 
+    section(class="section_prodect")
+      div(class="main_container")
+
+        //- top section product 
+        div(class="products_navbar_header")
+          div(class="srch_end_info_section")
+              form(action="#" , method="post" ,class="srch_info_sect")
+                button(type="button" class="js-show-filter btn-submit")
+                  i(class="fa fa-angle-down fa-lg") 
+                  span Filter
+                button(type="button" class="js-show-search_box btn-submit" )
+                  i(class="fa fa-search_box fa-lg ")
+                  span  search
+              .clearflex
+
+
+          div(class="nav-section")
+            div(class="nav-sec")
+              +nav_not_don(elemention,elemention_menu)
+        //end top section
+
+
+        // start search_box section
+        //div(class="search_box panel-search_box-section")
+          form(action="#" method="post")
+            input(type="search_box " , class="input_search_box" placeholder="search_box by color" data-ref="input-search_box" )
+
+        div(class="search_box panel-search_box-section")         
+          input(list="filter_searchResult" type="search"  id="filter_txt_search" class="filter_search_box_" placeholder="write here")
+          i(class="search_icon fa fa-search_box")
+          datalist(id="filter_searchResult")
+        // end search_box section
+
+        //- start information clothes  within filter
+        div(class="information_clothes panel-filter")
+          
+
+        // image section prodect
+        div(class="image-section-prodect featured__filter")
+          each vall,index in elemention
+              +product_images('1e.png',vall,index+1)
+              +product_images('2e.png',vall,index+2)
+              +product_images('3e.png',vall,index+3)
+              +product_images('4e.png',vall,index+4)
+
+             
+
+              
+    // end section
+    +small_card
+    div(class="footer")
+    include HTML/pug/link_javascript.pug
+    

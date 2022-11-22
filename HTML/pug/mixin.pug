@@ -1,0 +1,97 @@
+mixin product_images(name_image,menu_image,number)
+  div(class="product_image mix "+menu_image)
+    a(href="prodectdetail.html" class="img-product")
+      img(class="img-fluid" src="img/png/"+number+".png"  alt="Colorlib Template")
+      div(class="overlay")
+      img(class="hover-img" src="img/png/"+name_image alt="Colorlib Template")
+    div(class="text_image")
+      h3
+        a(href="#" class="imginfo")="MENEssgggential Tee"+number
+        a(href="#" class="fa-icon fa fa-heart ")
+        div(class="clearflex")
+      div(class="pricing")
+         span(class="price-dc") $120.00
+         span(class="price-sale") $80.00
+      
+
+// mixin button small silder menu          
+mixin btn_small_menu
+  button(class="Menu_button btn_sml_section btn-submit" type="button")
+    span(class="icon-bar")
+    span(class="icon-bar")
+    span(class="icon-bar") 
+
+
+// mixin navbar not navbar download
+mixin nav_not_don(elements)
+  ul(class="featured__controls ")
+    li(data-filter="*") all
+    each val in elements
+      li(data-filter="."+val)=val
+        
+
+        
+      
+- var num_img=['1e.png' , '2e.png' , '3e.png', '4e.png']
+//  image animatin
+mixin animatin_img(name_img)
+ each val_image,index in num_img
+    div(class="item")
+      +product_images(val_image,"" ,index+1)
+
+
+
+// product table card 
+mixin table_prod_card
+  tr
+    td(class="product-col")
+      img(src="img/tt.jpg" alt="")
+      div(class="title_card_table_prodect") Red Shirt Pleat        
+    td(class="price-col") $
+      span(class="price-col-span") 20
+    td(class="quantity-col")
+      div(class="pro-qty input_card_number")
+        input(type="text" value="1")     
+    td(class="total") $
+      span(class="total-col-span") 29
+    td(class="card-close"): span x
+
+
+// mixin small card 
+mixin small_card
+  div(class="popup_small_card")
+      div(class="small-cart-page")
+        div(class="head-sml-card")
+            h2 Shopping Cart
+            span(class="popup-close") X
+        ul(class="small-cart")
+          li
+              img(src="img/tt.jpg" alt="")
+              div(class="sml-title")
+                div(class="sml-title_card") Red Shirt Pleat
+                div(class="sml-title_card") $
+                  span 30
+          li
+              img(src="img/tt.jpg" alt="")
+              div(class="sml-title")
+                div(class="sml-title_card") Red Shirt Pleat
+                div(class="sml-title_card") $
+                  span 30
+          li
+              img(src="img/tt.jpg" alt="")
+              div(class="sml-title")
+                div(class="sml-title_card") Red Shirt Pleat
+                div(class="sml-title_card") $
+                  span 30
+          li
+              img(src="img/tt.jpg" alt="")
+              div(class="sml-title")
+                div(class="sml-title_card") Red Shirt Pleat
+                div(class="sml-title_card") $
+                 span 30
+        div(class="small-total") Total: $
+          span 75.00
+        div(class="btn_ch-card") 
+          a(href="card.html"): button(type="button" class="btn-submit") check out
+
+

@@ -1,0 +1,103 @@
+%application_placeholder{
+    width: 990px;
+    height: 595px;
+    position: fixed;
+    top:10px;
+}
+.application_contaner{
+    @extend %application_placeholder;
+    position: fixed;
+    .application_background{
+        background-color: black;
+        opacity: .5;
+        @extend %application_placeholder;
+    }
+    %Background{
+        top: 60px;
+        position: relative;
+        color: black;
+        width: 80%;
+        height:80%;
+        margin: auto;
+        border-radius: 30px;
+        padding-top: 20px;
+    }
+    .contaner{
+        @extend %Background;
+    .Background{
+        position: fixed;
+        @extend %Background;
+        background-color: white;
+        opacity: .8;
+    }
+    .Application_header{
+        position: relative;
+        left:34%
+    }
+    .paragraph{
+        position: relative;
+        margin: auto;
+        margin-top: 40px;
+        width: 30%;
+        text-align: left;
+        color: rgb(58, 57, 57);
+    }
+    .iphone{
+        position: absolute;
+        height: 73%;
+        top: 70px;
+        left: 50px;
+    }
+    .samsong{
+        position: absolute;
+        height: 76%;
+        top: 60px;
+        left: 63%;
+    }
+    
+    .samsong_screen{
+        position: absolute;
+        height: 20%;
+        top: 42%;
+        left: 80.4%;
+    }
+    .iphone_screen{
+        position: absolute;
+        height: 20%;
+        top: 42%;
+        left: 11.5%;
+    }
+    .android{
+        position: absolute;
+        height: 23%;
+        width: 12%;
+        top: 50%;
+        left: 58%;
+        }
+    .ios{
+        position: absolute;
+        height: 21%;
+        top: 51.5%;
+        left: 35.4%;
+    }
+    .Application_button{
+        position: absolute;
+        height: 9.5%;
+        top: 75%;
+        left: 33.6%;
+        border-radius: 20px;
+        border-width: 2px;
+        border-color: black;
+        &:hover{
+            background-color: red;
+            color: white;
+        }
+        width: 15%;
+        font-weight: 700;
+    }
+    .google_play{
+        left: 56.5%;
+    }
+}
+}
+

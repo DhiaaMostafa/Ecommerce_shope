@@ -1,0 +1,17 @@
+
+//Healpers:
+@import "Healpers/variables";
+@import "Healpers/mixins";
+@import "Healpers/common";
+
+//Layout:
+@import "Layout/header";
+@import "Layout/footer";
+
+//Componant:
+//@import "Componant/navbar";
+@import "Componant/image";
+@import "Componant/btn";
+@import "Componant/search_box.scss";
+//Pages:
+@import "Pages/home";

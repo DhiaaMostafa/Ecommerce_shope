@@ -1,0 +1,68 @@
+div(class="header_container")
+      div(class="risponsive_header")
+        img(src="img/4e.png"  alt="")
+          //- change menu_button to menu_icon
+          //- why btn_sml_head
+
+        a(class="Menu_button btn_sml_head" type="button")
+          span
+          span
+          span
+        a(class=" visble-laptop_screen icon-smallscrean-visible" href="#" ): i(class="fa fa-search_box search_box-home")
+        a(class=" visble-laptop_screen  icon-smallscrean-visible" href="#" ): i(class="fa fa-user")
+
+
+      //-(1)
+      ul(class="navbar js_nav_small")
+        li(): a(href="index1.html" class="navbar_elements") home
+
+        //-men
+        li(class="men_element")
+          a(href="prod.html" , class="navbar_elements")  men
+          div(class="men_dropdown_list dropdown_list")
+            a(href="#" ): span New arrivals
+            a(href="#" ): span Clothes
+            a(href="#" ): span Shoes 
+            a(href="#" ): span accessories
+
+        //-women
+        li(class="women_element")
+          a(href="prod.html" ,class="navbar_elements")  women
+          div(class="women_dropdown_list dropdown_list")
+            a(href="#" ): span New arrivals
+            a(href="#" ): span Clothes
+            a(href="#" ): span Shoes
+            a(href="#" ): span accessories
+        li: a(href="Application/Application.html" class="navbar_elements") application
+        li: a(href="contant.html" class="navbar_elements") contact us
+        li: a(href="about_us.html" class="navbar_elements") about us
+        li: a(href="FAQs.html" class="navbar_elements") help
+        li: a(href="wishlest.html" class="navbar_elements visble-laptop_screen") wishlest
+        
+        
+        //-navbar icons:
+        li: ul(class="right_navbar")
+              li(class="icons_direction"): a(class="" href="#" ): i(class="navbar_icons fa fa-search_box search_box-home")
+              li(class="icons_direction"): a(class="" href="#" ): i(class="navbar_icons fa fa-user" id="acountform")
+              li(class="icons_direction"): a(class="" href="wishlest.html" ): i(class="navbar_icons fa fa-heart")
+              li(class="icons_direction"): a(class="" href="#" ): i(class="navbar_icons fa fa-shopping-cart icon-card")
+              li(class=" language__element icons_direction ") 
+                a(class=" navbar_icons" href="#" ) English
+                  i(class="fa fa-angle-down ")
+                div(class="language_dropdown_list dropdown_list")
+                    form(action="#" method="post")
+                      input(class="lang_radio" type="radio" name="lang" value="English")
+                      | English 
+                      br
+                      input(class="lang_radio" type="radio" name="lang" value="Arabic")
+                      | Arabic
+
+      //div(class="search_box panel-search_box inp-search_box-home")
+      //- start search_box section
+      div
+        input(type="search"  list="home_searchResult" class="search_box inp-search_box-home"  id="home_txt_search" placeholder="write here")
+        i(class="search_icon fa fa-search_box")
+        datalist(id="home_searchResult")
+      //- end search_box section
+div(class="modal" id="signinform")
+div(class="modal" id="signupform")

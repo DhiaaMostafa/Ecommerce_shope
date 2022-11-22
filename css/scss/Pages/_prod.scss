@@ -1,0 +1,154 @@
+
+//=========================================
+//= Slider Section: prodect                               =
+//=========================================
+.section_prodect
+{
+  max-width: 100%;
+  margin-bottom: 40px;
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  /*  start top section*/
+  .products_navbar_header
+  {
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+   //navbar section home
+    .nav-section {
+      width: 60%;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      float:  $left;
+      padding-top: 53px;
+      padding-bottom:0px;
+      margin-#{$left}: -20px;
+      color: black !important;
+
+          @include wide_screen
+        {
+          width: 75%;
+          font-size: 24px;
+          
+        };
+        @include laptop_screen
+        {
+         width: 70%;
+         font-size: 24px;
+        };
+        @include small_laptop_screen
+        {
+          width: 100%;
+          font-size: 24px;
+          padding-top: 20px;
+        };
+        @include ipad_screen
+        {
+          width: 100%;
+          font-size: 20px;
+          padding-top: 20px;
+        };
+
+        @include laptop_screen_screen
+        {
+          width: 100%;
+          font-size: 16px;
+        };
+      .nav-sec {
+       text-align: $text_align_left; 
+       margin-bottom: 30px;
+       direction: $dir;
+        ul li {
+          list-style: none;
+          display: inline-block;
+          margin-#{$right}: 18px;
+          position: relative;
+          cursor: pointer;
+          text-transform: capitalize;
+      
+          &:hover {
+            padding-bottom: 5px;
+            color: $navbar_text_color_hover;
+            //font-weight: bold;
+            text-decoration: underline;
+          }
+      }
+    }
+  }
+
+
+// section search_box prodect
+
+//search_box_Box:
+
+  .srch_end_info_section
+   {
+     width: 25%;
+     float: $right;
+     padding-bottom: 20px;
+     padding-top: 47px;
+     @include laptop_screen
+     {
+      width: 30%;
+     };
+     @include small_laptop_screen
+     {
+       width: 100%;
+     };
+     @include ipad_screen
+     {
+       width: 100%;
+     };
+     .srch_info_sect
+     {
+       float: $right;
+       padding-right: 10px
+     }
+     .Menu_button
+     {
+       float:  $left;
+     }
+
+   }
+    
+  }
+  //end top section
+  
+ /* start image-section-prodect section*/  
+ .image-section-prodect 
+ { 
+  position: relative;
+	display: block;
+  overflow: hidden;
+  max-width: 100%;
+  .product_image
+  {
+    @include wide_screen
+    {
+      max-width: (93% /5);
+      
+    };
+    @include laptop_screen
+    {
+      max-width: (94% / 4);
+    };
+    @include small_laptop_screen
+    {
+      max-width: (94% / 3);
+    };
+    @include ipad_screen
+    {
+      max-width: (94% / 2)
+    };
+
+    @include laptop_screen_screen
+    {
+      max-width: (94% / 1)
+    };
+    
+  };
+ }
+ /* end image-section-prodect section*/
+}

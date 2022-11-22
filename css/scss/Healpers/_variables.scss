@@ -1,0 +1,98 @@
+//=========================
+//= Font & Text Variables =
+//=========================
+
+//text shadow:
+$text_shadow:2px 1px 1px #171616;
+
+//font size:
+$main_font_size:14px;
+$second_font_size:13px;
+
+//font weight:
+$main_font_weight:550;
+$second_font_weight:300;
+
+//font family:
+
+$font_family: 'SourceSansPro',arial;
+//$font_family:  Arial, Helvetica, sans-serif;
+//$font_family: 'Oswald', sans-serif;        
+//$font_family: 'Roboto', sans-serif;         
+
+//====================
+//= colors Variables =
+//====================
+
+//Header colors:
+$header_background_color:#09071f;
+$navbar_text_color:white;
+$navbar_text_color_hover: #D80006;
+
+//Footer colors:
+$color_back_footer:#505050;
+$color_footer: white;
+$color_footer_hover: #D80006;
+
+//Buttons colors:
+$color_back_btn:#09071f;
+$color_btn: white;
+$color_btn_hover: #D80006;
+
+//=======================
+//= empty Variables =
+//======================
+$dir :'';
+$left :'';
+$right:'';
+$text_align_left:'';
+$text_align_right:'';
+$arrayyleft:'';
+
+
+//=======================
+//= Direction  all the page ==== Variables =
+//======================
+$direction: ltr;
+@if $direction == ltr{
+
+    $left : left;
+    $right: right;
+    // direction
+    $dir : ltr;
+    //Text align:
+    $text_align_left: left;
+    $text_align_right: right;
+    // array 
+    $arrayyleft: (
+      element_margin: 0px 8px 5px 29px
+    );
+} @else{
+    //Floot:
+     $left: right;
+    $right: left;
+
+    // funtment css to left end right
+    $left : right;
+    $right: left;
+    // direction
+    $dir :rtl;
+    //Text align:
+    $text_align_left: right;
+    $text_align_right: left;
+    // array 
+    $arrayyleft: (
+      element_margin: 0px 30px 5px 8px
+    );
+
+}
+
+//========================
+//= Other Variables =
+//========================
+
+$website_name:tini;
+
+
+
+

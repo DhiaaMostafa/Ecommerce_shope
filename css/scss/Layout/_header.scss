@@ -1,0 +1,75 @@
+//=================================================
+//= header:                                       =
+//=================================================
+
+// navbar File includ:
+@import "../Componant/navbar";
+
+.header
+{
+  width: 100%;
+  background-color: $header_background_color;
+  background-size: cover;
+  display: block;
+
+  //================================================
+  //= navbar:                                      =
+  //================================================
+
+  .header_container
+  {
+    width:100%;
+    display: block;
+    overflow: hidden;         //?why i cant delete it
+    position: relative;
+    z-index: 2;
+    padding: 12px 36px; //*Edited
+    img                       //!change to svg
+        {
+          width:  90px;
+          height: 85px;
+          float:  $left;
+        }
+    
+  }
+
+//search_box_Box:
+.search_box
+{
+  display: none;
+  padding: 0px 10px 0px 35px;
+  position: absolute;
+  top: 69px;
+  left: 150px;
+  height: 33px;
+  width: 60%;
+  background: white;
+  opacity: .85;
+  border: none;
+  border-radius: 12px;
+}
+.search_icon{
+  position:absolute;
+  left: 162px;
+  top: 77px;
+  color: #ccc;
+  display:none;
+}
+
+/*
+	width: 80%;
+    padding-bottom: 9px;
+    margin: auto;
+    position: relative;
+    display: none;
+    z-index: 2;
+  form .input_search_box
+  { 
+	width: 90%;
+    height: 45px;
+    opacity: 0.9;
+	border-radius: 7px;
+	border: none;
+  }*/
+}
+

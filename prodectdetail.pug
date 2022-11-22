@@ -1,0 +1,134 @@
+include HTML/pug/mixin.pug
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title Document
+    include HTML/pug/linker.pug
+  body
+    div(class="header")
+    div(class="Product-Details")
+     div(class="main_container")
+      //- image display on dot image slider
+      div(class="row-detail")
+        div(class="image-detail")
+          img(src="img/twemen.png")
+          i(class="fa fa-chevron-left fa-lg")
+          i(class="fa fa-chevron-right fa-lg")
+        //- dot image slider  
+        div(class="slick-dot-image")
+          
+            img(src="img/twemen.png" class="selected")
+            img(src="img/22.png")
+            img(src="img/tt.jpg")
+
+
+
+      // infromation aboat prodect 
+      div(class="row-detail")
+        div(class="detail-size-color-text")
+          h2 MENEssential Tee
+          p Black
+          P(class="price-detail") 
+            
+          p(class="star-detail")
+            i(class="ti-star")
+            i(class="ti-star")
+            i(class="ti-star")
+            i(class="ti-star")
+            i(class="ti-star")
+            
+          - var color=[ "red","blue","green" ,"gold","yellow"]
+          -var size=['s','l','ml','xl','xxl']
+        div(class="detail-size-color-text")
+          p Black
+
+          p(class="color-detl")
+            each val in color
+              a(href="#" class='color-linker' style="background:"+val+";")
+          div(class="clearflex")
+
+          p(class="size-detl")
+            each vall ,index in color
+              a(href="#" class='size-linker' style="background:"+vall+";")=size[index]
+
+          div(class="number-dot input_card_number")
+            input(type="text" value="1")
+          button(class="btn-submit")  Add to car
+           - var num_immage=['tt' , 'tt' , 'tt', 'tt']
+    
+    //-------------------------------------------------------------
+    div(class="row-detial-inform")
+      div(class="main_container")
+        div(class="dy-meu-taps")
+          ul(class="taps-list")
+            li(class="active" data-content=".content-one") one
+            li(data-content=".content-tow") twe
+            li(data-content=".content-three") three
+
+          div(class="conent-taps")
+            div(class="content-one") 
+              || Beryl Cook is one of Britain’s most talented and amusing artists .
+              || Beryl Cook is one of Britain’s most talented and amusing artists .
+              || Beryl Cook is one of Britain’s most talented and amusing artists .
+              || Beryl Cook is one of Britain’s most talented and amusing artists .
+              || Beryl Cook is one of Britain’s most talented and amusing artists .
+            div(class="content-tow") 
+              table(class="table-taps")
+                tr 
+                  td Width
+                  td 128mm
+                tr 
+                  td height
+                  td 128mm
+
+            div(class="content-three") 
+              div(class="Sectionsl")
+               div(class="media-suggest")
+                div(class="media")
+                  div(class="media-inf")
+                    div(class="img-cont-tap")
+                      img(src="img/22.png" alt="")
+                    div(class="media-body")
+                      h4 Blake Ruiz
+                      h5 12th Feb, 2017 at 05:56 pm
+                  p(class="text-media") 
+                    || Beryl Cook is one of Britain’s most talented and amusing artists .
+                    || Beryl Cook is one of Britain’s most talented and amusing artists .
+                 
+              div(class="Sectionsl")
+                form(action="#" class="contact-form form-suggest") 
+                  div(class="form-group from-sugg")
+                    input(type="email" class="form-control eml-suggest" placeholder="Your Email")
+                  div(class="form-group from-sugg")
+                    textarea(name="" id="" cols="30" rows="4" class="form-control txtareaa-suggest " placeholder="Message that can help without it" dir="auto")
+                  div(class="form-group from-sugg")
+                     input(type="submit" value="Send Message" class="btn-contant btn-submit btn-suggest" )
+      
+
+
+    //---------------------------------------
+    div(class="detail-animtion")
+      div(class="main_container")
+        div(class="owl-carousel  owl-theme image_anim_home_Clothes")
+          +animatin_img(num_immage)
+	     
+				
+		  
+		   
+        
+
+		   
+				
+	  
+                  
+
+
+
+
+    // footer the page prodect detail 
+    +small_card
+    div(class="footer")
+    include HTML/pug/link_javascript.pug
+    script(src="js/productdetail.js")

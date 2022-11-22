@@ -1,0 +1,46 @@
+include HTML/pug/mixin.pug
+html
+  head
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Commercial-Website</title>
+    include HTML/pug/linker_home.pug
+  body
+
+    //- start slider
+    - var elements=['featured' , 'daily deals' , 'best seller', 'sala top', 'rate']
+    - var slider_images=['slider_img_1','slider_img_2']
+    - var num_immage=['tt' , 'tt' , 'tt', 'tt']
+    div(class="header") 
+    //- slider image
+    div(class="owl-carousel owl-theme slider")
+      each image in slider_images
+        //item???????????
+        div(class="item") 
+            div(class="slider_image" style="background-image:url(img/"+image+".jpg)")
+    //- end slider
+
+    //- start products_navbar
+    div(class="div_section_home main_container")
+        h1(class="products_navbar_header") Store overview
+        div(class="nav-section")
+          div(class="nav-sec")
+          
+            //-featured__controls (for js)
+            ul(class="featured__controls")
+              li(data-filter="*") all
+              each val in elements
+                li(data-filter="."+val)=val
+          
+        //- animatin image_clothes
+        - var num_immage=['1' , '2' , '3', '4']
+        div(class="image_clothes owl-stage")
+          div(class="owl-carousel  owl-theme image_anim_home_Clothes")
+             +animatin_img(num_immage)
+    +small_card
+    div(class="footer")
+    include HTML/pug/link_javascript.pug
+
+
+

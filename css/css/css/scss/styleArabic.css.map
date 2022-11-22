@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,+BAA+B;AAC/B,OACA;EAAK,OAAO,EAAE,IAAI;EACd,qBAAe;IACX,WAAW,EAAE,eAAe",
+"sources": ["../../../scss/styleArabic.scss"],
+"names": [],
+"file": "styleArabic.css"
+}

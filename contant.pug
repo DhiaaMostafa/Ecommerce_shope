@@ -1,0 +1,63 @@
+include HTML/pug/mixin.pug
+html
+  head
+    include HTML/pug/linker.pug
+  body
+    div(class="header")
+    div(class="contant-page")
+      div(class="main_container")
+        div(class="contant-section")
+          h1  contact us
+          div(class="Sections")
+            form(class="contact-form" action="php/contant.php" method="POST")
+              div(class="form-group")
+                h2 Send us a message
+              div(class="form-group")
+                input(type="text" class="form-control" name="name" placeholder="Your Name" dir="auto" ) 
+              div(class="form-group")
+                input(type="email" name="email" class="form-control" placeholder="Your Email")
+              div(class="form-group")
+                input(type="text" name="subject" class="form-control" placeholder="Subject" dir="auto")
+              div(class="form-group")
+                textarea(id="" name="message" cols="30" rows="7" class="form-control" placeholder="Message that can help without it" dir="auto")
+              div(class="form-group")
+                input(type="submit" value="Send Message" class="btn-contant btn-submit" )
+
+          
+
+
+          // row 2
+          div(class="Sections")
+            div(class="section-container")
+            
+              div(class="tool-contant")
+                span(class="contact-info__icon")
+                  i(class="ti-location-pin icon-contant")
+                div(class="media-contant")
+                  span(class="address-icon-contant") address
+                  p(class="info-icon-contant")   Yemen, Ibb, Taiz street
+
+
+              div(class="tool-contant")
+                span(class="contact-info__icon")
+                  i(class="fa fa-phone icon-contant")
+                div(class="media-contant")
+                  span(class="address-icon-contant") Lets Talk
+                  p(class="info-icon-contant")   772457246 \ 714899800
+            
+              div(class="tool-contant")
+                span(class="contact-info__icon")
+                  i(class="ti-email icon-contant")
+                div(class="media-contant")
+                  span(class="address-icon-contant") Sale Support
+                  p(class="info-icon-contant")  dhiaamostafe@gmail.com 
+
+
+        div(class="map-contant")
+          img(src="img/map.png" alt="" class="img-map")
+          //img(src="img/4e.png" alt="" class="img-comp-contant")
+
+
+    +small_card
+    div(class="footer")
+    include HTML/pug/link_javascript.pug

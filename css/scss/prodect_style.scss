@@ -1,0 +1,28 @@
+
+//Healpers
+@import "Healpers/variables";
+@import "Healpers/mixins";
+@import "Healpers/common";
+
+//Layout
+@import "Layout/header";
+@import "Layout/footer";
+
+//Componant
+//@import "Componant/navbar";
+@import "Componant/image";
+@import "Componant/btn";
+@import "Componant/search_box";
+//@import "Componant/filter";  
+
+//Pages:
+
+@import "Pages/prod";
+@import "Pages/wishlest";
+@import "Pages/contant page";
+@import "Pages/product detail";
+
+@import "Pages/card";
+
+
+

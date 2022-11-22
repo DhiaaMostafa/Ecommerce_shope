@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,+BAA+B;AAG3B,qBAAe;EACX,YAAY,EAAE,eAAe",
+"sources": ["../../../scss/styleEnglish.scss"],
+"names": [],
+"file": "styleEnglish.css"
+}

@@ -1,0 +1,171 @@
+
+	table.cart-table {
+		width: 100%;
+		margin: 20px 0px;
+		border-collapse: collapse;
+		overflow: auto;
+		direction: $dir;
+		@include small_laptop_screen
+		{
+		  width: 100%;
+		};
+		@include ipad_screen
+		{
+		  width: 100%;
+		};
+		thead {
+			border-bottom: 2px solid #D0D7DB;
+			tr {
+				th{
+
+					text-align: $text_align_left;
+					color: #838383;
+					font-size: 16px;
+					font-weight: 500;
+					padding: 16px 0;
+				}
+			}
+		}
+		/* ----------------------------------------------*/
+		.product_card_add{
+			tr{
+				border-bottom: 2px solid #D0D7DB;
+			td {
+				margin: 9px 0px;
+				color: black;
+			   font-size: 18px;
+			   font-weight: 600;
+			   padding-right: 15px;
+			   }
+			}
+		}
+		/* ----------------------------------------------*/
+		.product-col {
+			display: table;
+				@include ipad_screen
+				{
+				display: block;
+				};
+
+			img {
+				max-width: 100px;
+				@include ipad_screen
+				{
+					max-width: 50px;
+				};
+			}
+			.title_card_table_prodect {
+				display: table-cell;
+				vertical-align: middle;
+                padding-left: 30px;
+				padding-right: 15px;
+				@include ipad_screen
+				{
+					display: table-column;
+					padding-left: 5px;
+					padding-right: 5px;
+				};
+			}
+		}
+		/* ----------------------------------------------*/
+		.price-col,.total {
+			width: 15%;
+			@include ipad_screen
+			{
+			width: 0;
+			};
+
+		}
+           /* ----------------------------------------------*/
+		.quantity-col {
+			width: 28%;
+			@include ipad_screen
+			{
+			width: 0;
+			};
+			.pro-qty {
+				height: 39px;
+                 width: 173px;
+                border: 2px solid #EEF1F2;
+                 border-radius: 16px;
+				 text-align: center;
+				 @include ipad_screen
+				 {
+					width: 80px;
+				 };
+				input {
+				    width: 4vw;
+					text-align: center;
+					font-weight: 700;
+					height: 1vh;
+					border: none;
+
+				}
+				 .qtybtn {
+					color: #838383;
+					cursor: pointer;
+					font-size: 18px;
+					font-family: "Montserrat", sans-serif;
+					font-weight: 700;
+					padding: 16px 0;
+				}
+
+			}
+		}
+		/* ----------------------------------------------*/
+		.card-close {
+			
+			//width: 6%;
+			span
+			{   color: $color_back_btn;
+				font-size: 24px;
+				&:hover
+				{
+					cursor: pointer;
+					color: red;
+					font-weight: bold;
+					font-size: 30px;
+				}
+				
+			}
+		}
+		/* ----------------------------------------------*/
+		.end_card_table tr th
+		{
+			padding: 20px 0px;
+			.input-coupon-code
+			{
+			
+				border-radius: 8px;
+				width: 100%;
+		        height: 50px;
+				display: block;
+				text-align: center;
+			}
+			.btn-card
+			{ width: 140px;
+				@include ipad_screen
+				{
+					max-width: 73px;
+				};
+
+			}
+		}
+
+		 /* total finlly */
+		 .finall-table-total
+		 {
+			 background-color: cornflowerblue;
+		 }
+		 
+	}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,294 @@
+
+<!-- mixin button small silder menu          -->
+<!-- mixin navbar not navbar download-->
+<!--  image animatin-->
+<!-- product table card -->
+<!-- mixin small card -->
+<html>
+  <head>
+    <link rel="stylesheet" href="css/Libraries/normalize.css"/>
+    <link rel="stylesheet" href="css/Libraries/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/Libraries/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/Libraries/jquery-ui.css"/>
+    <link rel="stylesheet" href="css/Libraries/owl.carousel.css"/>
+    <link rel="stylesheet" href="css/Libraries/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css"/>
+    <link rel="stylesheet" href="css/css/prodect_style.css"/>
+    <link rel="stylesheet" href="css/css/filter.css"/>
+    <link rel="stylesheet" href="css/css/signin.css"/>
+    <link rel="stylesheet" href="css/css/signup.css"/>
+  </head>
+  <body>
+    <!-- start header-->
+    <div class="header"></div>
+    <!-- end header-->
+    <section class="section_prodect">
+      <div class="main_container">
+        <div class="products_navbar_header">
+          <div class="srch_end_info_section">
+            <form class="srch_info_sect" action="#" method="post">
+              <button class="js-show-filter btn-submit" type="button"><i class="fa fa-angle-down fa-lg"> </i><span>Filter</span></button>
+              <button class="js-show-search_box btn-submit" type="button"><i class="fa fa-search_box fa-lg "></i><span> search</span></button>
+            </form>
+            <div class="clearflex"></div>
+          </div>
+          <div class="nav-section">
+            <div class="nav-sec">
+              <ul class="featured__controls ">
+                <li data-filter="*">all</li>
+                <li data-filter=".featured">featured</li>
+                <li data-filter=".daily_deals">daily_deals</li>
+                <li data-filter=".best_seller">best_seller</li>
+                <li data-filter=".sala_top">sala_top</li>
+                <li data-filter=".rate">rate</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--end top section-->
+        <!-- start search_box section-->
+        <!--div(class="search_box panel-search_box-section")
+        form(action="#" method="post")
+          input(type="search_box " , class="input_search_box" placeholder="search_box by color" data-ref="input-search_box" )
+        
+        -->
+        <div class="search_box panel-search_box-section">        
+          <input class="filter_search_box_" list="filter_searchResult" type="search" id="filter_txt_search" placeholder="write here"/><i class="search_icon fa fa-search_box"></i>
+          <datalist id="filter_searchResult"></datalist>
+        </div>
+        <!-- end search_box section-->
+        <div class="information_clothes panel-filter"></div>
+        <!-- image section prodect-->
+        <div class="image-section-prodect featured__filter">
+          <div class="product_image mix featured"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/1.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/1e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee1</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix featured"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/2.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/2e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee2</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix featured"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/3.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/3e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee3</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix featured"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/4.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/4e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee4</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix daily_deals"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/2.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/1e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee2</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix daily_deals"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/3.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/2e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee3</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix daily_deals"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/4.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/3e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee4</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix daily_deals"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/5.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/4e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee5</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix best_seller"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/3.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/1e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee3</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix best_seller"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/4.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/2e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee4</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix best_seller"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/5.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/3e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee5</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix best_seller"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/6.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/4e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee6</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix sala_top"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/4.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/1e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee4</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix sala_top"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/5.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/2e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee5</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix sala_top"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/6.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/3e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee6</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix sala_top"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/7.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/4e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee7</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix rate"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/5.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/1e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee5</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix rate"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/6.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/2e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee6</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix rate"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/7.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/3e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee7</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+          <div class="product_image mix rate"><a class="img-product" href="prodectdetail.html"><img class="img-fluid" src="img/png/8.png" alt="Colorlib Template"/>
+              <div class="overlay"></div><img class="hover-img" src="img/png/4e.png" alt="Colorlib Template"/></a>
+            <div class="text_image">
+              <h3><a class="imginfo" href="#">MENEssgggential Tee8</a><a class="fa-icon fa fa-heart " href="#"></a>
+                <div class="clearflex"></div>
+              </h3>
+              <div class="pricing"><span class="price-dc">$120.00</span><span class="price-sale">$80.00</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section-->
+    <div class="popup_small_card">
+      <div class="small-cart-page">
+        <div class="head-sml-card">
+          <h2>Shopping Cart</h2><span class="popup-close">X</span>
+        </div>
+        <ul class="small-cart">
+          <li><img src="img/tt.jpg" alt=""/>
+            <div class="sml-title">
+              <div class="sml-title_card">Red Shirt Pleat</div>
+              <div class="sml-title_card">$<span>30</span></div>
+            </div>
+          </li>
+          <li><img src="img/tt.jpg" alt=""/>
+            <div class="sml-title">
+              <div class="sml-title_card">Red Shirt Pleat</div>
+              <div class="sml-title_card">$<span>30</span></div>
+            </div>
+          </li>
+          <li><img src="img/tt.jpg" alt=""/>
+            <div class="sml-title">
+              <div class="sml-title_card">Red Shirt Pleat</div>
+              <div class="sml-title_card">$<span>30</span></div>
+            </div>
+          </li>
+          <li><img src="img/tt.jpg" alt=""/>
+            <div class="sml-title">
+              <div class="sml-title_card">Red Shirt Pleat</div>
+              <div class="sml-title_card">$<span>30</span></div>
+            </div>
+          </li>
+        </ul>
+        <div class="small-total">Total: $<span>75.00</span></div>
+        <div class="btn_ch-card"> <a href="card.html">
+            <button class="btn-submit" type="button">check out</button></a></div>
+      </div>
+    </div>
+    <div class="footer"></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/outset.js"></script>
+    <script src="js/inset.js"></script>
+  </body>
+</html>

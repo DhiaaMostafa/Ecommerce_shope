@@ -1,0 +1,67 @@
+//====================
+//= Default button =
+//====================
+
+ .btn-submit
+{
+  height: 40px;
+  width: 116px;
+  text-align: center;
+  border-radius: 11px;
+  font-weight: 550;
+  font-family: "SourceSansPro", arial;
+  cursor: pointer;
+  margin-right: 8px;
+  &:hover
+  {
+    color: $color_btn;
+    background-color: $color_btn_hover;
+  }
+  
+}
+
+// btn meun hidden
+
+.Menu_button
+{
+  //background-color: $color_back_btn; //! ???
+  border: none;
+  cursor: pointer;
+  display: none;
+  border: none;
+  border-radius: 6px;
+  float: $right;
+  width: 48px;
+  height: 30px;
+  margin-top: 26px;
+
+  @include small_laptop_screen
+  {
+    display: block;
+
+  };
+  @include ipad_screen
+  {
+    display: block;
+
+  };
+  
+// span  display line in button
+span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  background-color: white;
+  margin-bottom: 3px;
+ }
+}
+
+/* start all small  button hide */
+.srch_info_sect
+{
+  span 
+  {
+    padding-left: 10px;
+  }
+}

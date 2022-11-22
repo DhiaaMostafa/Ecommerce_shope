@@ -1,0 +1,71 @@
+
+
+
+<?php
+session_start();
+$noNavbar = '';
+$pageTitle = 'Login';
+
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+ 
+  include '../../php/init.php';
+  $username = $_POST['Username'];
+  $password = $_POST['Password'];
+  $_SESSION['Username'] = $username; 
+
+  if ($username=="mostafe") 
+  {header('Location:../../php/dashboard.php');
+  exit();}
+  
+  else{
+    $_SESSION['Username'] = $username; 
+    $_SESSION['ID'] = $row['UserID']; 
+    {
+      header('Location:../../index1.html');
+      exit();}
+  }
+
+}
+
+?>
+
+
+<div id="bo" class="modal-content animate">
+    <p style="margin-top:10px;font-weight: 900;font-family: Arial, Helvetica, sans-serif;font-size: 2vw;text-align: center;">I am already registered.</p>
+   
+    <form class="" id="loginform"  action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+      
+      
+  
+      <div class="signcontainer" >
+        <input type="text" placeholder="Enter Username" name="Username" id="user" required>
+  
+      
+        <input type="password" placeholder="Enter Password" name="Password" id="pass" required>
+          
+         <button class="bt1" id="login" type="submit" onclick="return signin(this)">Signin</button>
+         <p>I am already registered? >
+        </p>
+       
+      </div>
+  
+    </form>
+      <div class="signcontainer" style="border: none;">
+        <p style="         margin: 16px;   
+        ">Don't have an account yet?
+        </p>
+         <button  class="bt2" id="signuppage" ><a href="#">Join Now</a></button>
+           
+    </div>
+
+
+
+
+
+
+
+
+
+
+

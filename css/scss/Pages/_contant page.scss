@@ -1,0 +1,130 @@
+.contant-page
+{
+    
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+    .contant-section
+    { 
+        max-width: 100%;
+        margin: 100px auto;
+        position: relative;
+        overflow: hidden;
+        h1 
+        {
+          font-size: 3rem;
+          text-align: center;
+          text-transform: capitalize;
+          font-family: serif;
+        }
+
+        //-----------------------------------
+        .Sections
+          {
+            text-align: $text_align_left;
+            position: relative;
+            padding: 32px;
+            height: 32em;
+            border: 2px solid black;
+            height: 511.992px;
+            @include wide_screen
+            {
+              max-width: (99% / 2);
+              padding-left: 50px;
+            };
+            @include laptop_screen
+            {
+              max-width: (99% / 2);
+              padding-left: 20px;
+            };
+            @include small_laptop_screen
+            {
+              max-width: (99% / 2);
+              padding-left: 20px;
+              
+            };
+            @include ipad_screen
+            {
+              max-width: (99% / 1);
+              padding-left: 50px;
+        
+            };
+            .section-container
+            { margin: 80px auto;
+              width: 75%;
+              direction: $dir;
+              text-align: $text_align_left;
+              .tool-contant
+              {       
+                  display: -ms-flexbox;
+                  display: flex;
+                  -ms-flex-align: start;
+                  align-items: flex-start;
+                  margin-bottom: 50px;
+  
+                  .contact-info__icon
+                  {
+                    margin-right: 20px;
+                    margin-left: 20px;
+                    .icon-contant
+                    {
+                      font-size: 40px;
+                    }
+                  }
+  
+  
+  
+                .media-contant
+                {
+                    flex: 1;
+                    span.address-icon-contant
+                    {
+                      font-size: 30px;
+                      margin-bottom: 0;
+                    }
+                    p.info-icon-contant
+                    {
+                      color: #999999;
+                      font-size: 20px;
+                    }
+                }
+            
+            
+              }
+            }
+
+          
+
+          
+        
+          }
+
+
+        //----------------------------------------
+
+    }
+    // map contant 
+    .map-contant
+    {
+      width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 474px ;
+      .img-map
+      {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+
+      }
+    }
+
+    
+}

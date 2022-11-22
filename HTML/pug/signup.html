@@ -1,0 +1,50 @@
+
+<?php
+session_start();
+$noNavbar = '';
+$pageTitle = 'Login';
+
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+ 
+  include '../../php/init.php';
+                                                                                                                            
+  
+  $stmt = $con->prepare("INSERT into users(Username,Password,Email,Fullname,GroupID,Date)
+  VALUES('{$username}','{$password}','{$emal}','{$fullname}',0,now())
+
+             
+             ");
+            $stmt->execute();
+
+  header('Location:../../index1.html');  
+}
+  
+
+?>
+
+
+<div class="modal-content animate">
+    <p style="margin-top:10px;font-weight: 900;font-family: Arial, Helvetica, sans-serif;font-size: 2vw;text-align: center;">Create New  Account</p>
+  
+   
+    <form class="" id="joinform" action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
+      
+      
+  
+      <div class="sigupcontainer" >
+        
+        <input type="text" placeholder="Enter Username" name="Username" required>
+        <input type="text" placeholder="Enter Fullname" name="FullName" required>
+  
+        <input type="email" placeholder="Enter your email" name="Email" required>
+          
+        <input type="password" placeholder="Enter Password" name="Password" required>
+          
+         <button id='joinbtn' class="bt1" type="submit" onclick="return signin(this)">signup</button>
+        
+      </div>
+  
+    </form>
+      
+  </div>

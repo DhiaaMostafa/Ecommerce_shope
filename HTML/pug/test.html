@@ -1,0 +1,61 @@
+<html>
+
+        <body>
+          <form style="text-align:center" action="mama.php" method="post" onsubmit="return check()">
+
+            <div class="username">
+              <span id="label_username">Username :</span>
+              <input type="text" id="username" name="username">
+              <p id="username_err"></p>
+            </div><br />
+
+            <div class="mail">
+              <span id="label_mail">Mail :</span>
+              <input type="text" id="mail" name="mail"></input>
+              <p id="mail_err"></p>
+            </div><br />
+
+            <input type="submit" id="envoyer" value="Envoyer" />
+          </form>
+        </body>
+
+        <script>
+          function check() {
+            return check_fields(['username', 'mail']);
+          }
+
+          function check_fields(items) {
+            var check = true;
+            for (i = 0; i < items.length; i++) {
+              check_field(items[i]);
+            };
+
+            for (i = 0; i < items.length; i++) {
+              var value = document.getElementById(items[i] + '_err').textContent;
+              if (value != '') {
+                check = false
+              }
+            };
+            return check
+          }
+
+          function check_field(id) {
+            var value = document.getElementById(id).value;
+            ajax_php(id, value, 'check_field.php', function(returned_value) {
+              document.getElementById(id + '_err').innerHTML = returned_value;
+            });
+          }
+
+          function ajax_php(id, value, file, fn) {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+              if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                fn(xmlhttp.responseText);
+              }
+            };
+            xmlhttp.open('GET', file + '?' + id + '=' + value, true);
+            xmlhttp.send();
+          }
+        </script>
+
+        </html>

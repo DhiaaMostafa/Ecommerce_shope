@@ -1,0 +1,204 @@
+//=================================================
+//= footer:                                       =
+//=================================================
+
+footer {
+  max-width: 100%;
+  margin-top: 50px;
+  font-family: 'SourceSansPro', Arial, Helvetica, sans-serif; //!edite
+
+  .footer_bar {  //container 
+    line-height: 1.5;
+    color: $color_footer; //!edite
+    background-color: $color_back_footer; //!edite
+    padding: 30px;
+
+    //=================================================
+    //= part_2:                                       =
+    //=================================================
+
+    .part_2 {
+      float:  $left;
+      direction: $dir;
+      margin-left: 20px;
+      padding-bottom: 30px;
+      //---------------------------------------------------
+      &:first-of-type{
+        width: 35%;
+        border-#{$right}: solid 2px white;
+        @include small_laptop_screen {
+          border-#{$right}: solid 2px $color_back_footer;
+          width: 100%;
+        }
+
+        &:last-of-type{
+         padding-left: 180px;
+          }
+  
+        @include ipad_screen {
+          border-#{$right}: solid 2px $color_back_footer;
+          width: 100%;
+        }
+      }
+
+
+      @include laptop_screen {
+        max-width: (99% / 3);
+      }
+
+      ;
+      @include wide_screen {
+        max-width: (99% / 3);
+      }
+      
+
+      @include small_laptop_screen {
+        width: (99% / 1);
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 40px;
+      }
+
+      @include ipad_screen {
+        width: (99% / 1);
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 40px;
+      }
+
+
+      //Logo:
+      .footer_logo {
+        border-bottom: solid 2px white;
+        padding: 10px 0px;
+        width: 100px;
+        margin-bottom: 30px;
+
+        @include small_laptop_screen {
+          margin: 0 auto;
+          margin-bottom: 30px;
+        }
+  
+        @include ipad_screen {
+          margin: 0 auto;
+          margin-bottom: 30px;
+        }
+  
+
+        img {
+          //!change to svg
+          width: 95px;
+          height: 100px;
+        }
+      }
+
+      //Social_media_icons:
+      .Social_media {
+        padding: 0;
+        list-style: none;
+        //float:  $left;
+        li{
+          @include small_laptop_screen {
+            margin: 0 auto;
+            margin-bottom: 30px;
+            text-align: center;
+          }
+    
+          @include ipad_screen {
+            margin: 0 auto;
+            margin-bottom: 30px;
+            text-align: center;
+          }
+          
+        }
+
+
+        //display: inline;
+        .Social_media_title {
+          font-size: 21;
+          
+        }
+
+        .icon {
+          //float:  $left;
+          margin: 11px 25px 0px 0px;
+          color: white;
+          font-size: 30px; 
+        }
+
+
+      }
+      //-----------------------------------------------------
+
+      .footer_lists {
+
+        list-style: none;
+  
+        .footer_lists_titles {
+          border-bottom: solid 2px floralwhite;
+          width: max-content;
+          padding-bottom:10px ;
+
+
+          @include small_laptop_screen {
+            margin: 0 auto;
+            margin-bottom: 30px;
+          }
+    
+          @include ipad_screen {
+            margin: 0 auto;
+            margin-bottom: 30px;
+          }
+          
+
+        }
+
+        .footer_lists_elements {
+          font-size: 19px;
+          margin: 5px;
+          width: 100%;
+          margin-top: 20px; 
+          span{
+            float: $right;
+           // padding-right: 15px;
+            &:last-of-type{
+              padding-#{$left}: 10px;
+            }
+          }
+
+        }
+
+        .services {
+          padding-#{$left}:5px ;
+          font-size: 17px;
+          font-family: 'SourceSansPro', Arial, Helvetica, sans-serif; //!edite
+          &:hover {
+            border-#{$left}: solid 3px #fff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+
+  //Copyright:
+  .Copyright {
+    clear: both;
+    padding: 20px 0px;
+    text-align: center;
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+
+      a {
+        color: black;
+
+        &:hover {
+          color: $color_btn_hover;
+        }
+      }
+    }
+  }
+}

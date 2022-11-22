@@ -1,0 +1,212 @@
+
+  <div class="button filtercolor" id="colors">
+    <i>Color</i> 
+    <span id="colorsign" class="fa fa-angle-down  " ></span> 
+</div> 
+<div class="button filtertype" id="typs">
+ <i>Type</i> 
+ <span id="colorsign" class="fa fa-angle-down  " ></span> 
+
+</div>
+<div class="button filtersort" id="sorts">
+ <i>Sort By</i> 
+ <span id="colorsign" class="fa fa-angle-down  " ></span> 
+
+</div>
+<div class="button filterprice" id="prices">
+ <i>Price Ring </i> 
+ <span id="colorsign" class="fa fa-angle-down  " ></span> 
+
+</div>
+<div class="button filtersize" id="sizes">
+ <i>Size </i> 
+ <span id="colorsign" class="fa fa-angle-down  " ></span> 
+
+</div>
+<div style="clear: both;"></div>
+<div class="container">
+  <div   class=" filtercolor allcolor filteritem">
+ <div style="padding: 10px;border-bottom:2px solid #ccc;position: relative;;">
+     <i>1 selected</i>
+     <span class="selectall">All</span>
+
+
+ </div>
+ <div style="padding: 16px;"><label class="container1" >   
+            <input type="checkbox" name="color" value="blue" checked="checked">
+     <span class="checkmark" style="background-color: blue;"></span>
+   </label>
+   <label class="container1" >
+     <input type="checkbox" name="color" value="white">
+     <span class="checkmark" style="background-color: white;"></span>
+   </label>
+   <label class="container1">
+     <input type="checkbox" name="color" value="green">
+     <span class="checkmark" style="background-color:green"></span>
+   </label>
+   <label class="container1" >
+     <input type="checkbox" name="color" value="gray">
+     <span class="checkmark" style="background-color:gray"></span>
+   </label>
+   <label class="container1">
+     <input type="checkbox" name="color" value="red">
+     <span class="checkmark" style="background-color:red"></span>
+   </label>
+   <label class="container1">
+     <input type="checkbox" name="color" value="brown">
+     <span class="checkmark" style="background-color:brown"></span>
+   </label>
+   <label class="container1">
+     <input type="checkbox" name="color" value="yellow">
+     <span class="checkmark" style="background-color:yellow"></span>
+   </label>
+   <label class="container1">
+       <input type="checkbox" name="color" value="pink">
+       <span class="checkmark" style="background-color:pink"></span>
+     </label><label class="container1">
+       <input type="checkbox" name="color" value="purple">
+       <span class="checkmark" style="background-color:purple"></span>
+     </label><label class="container1">
+       <input type="checkbox" name="color" value="orange">
+       <span class="checkmark" style="background-color:orange"></span>
+     </label><label class="container1">
+       <input type="checkbox" name="color" value="lightblue">
+       <span class="checkmark" style="background-color:lightblue"></span>
+     </label><label class="container1">
+       <input type="checkbox" name="color" value="lightgreen">
+       <span class="checkmark" style="background-color:lightgreen"></span>
+     </label><label class="container1">
+       <input type="checkbox" name="color" value="black">
+       <span class="checkmark" style="background-color:black"></span>
+     </label><label class="container1">
+       <input type="checkbox">
+       <span class="checkmark"></span>
+     </label>
+           </div>
+ <div class="colorbtn" style="border-top:1px solid #ccc;padding: 5px;clear:both;text-align:center ">
+     <button class="applay"  id="colorbtn"  >Applay</button>
+ </div>
+</div>
+<div   class="alltype filtertype filteritem" id="alltypes"> 
+    <div style="padding: 10px;border-bottom:2px solid #ccc;position: relative;;">
+  <i>1 selected</i>
+ <span class="selectall">All</span>
+
+</div>
+<ul style="padding: 0;">
+ <li  ><input type="checkbox" checked name="type" value="t-shirt">T_shirt  </li>
+ <li >   <input type="checkbox" checked name="type" value="Sweater">Sweater </li>
+
+ 
+ <li> <input type="checkbox" checked name="type" value="Shorts">Shorts </li>
+ <li>
+     <input type="checkbox" checked name="type" value="Choes">Choes</li>
+ <li>
+     <input type="checkbox" checked name="type" value="Trousers"> Trousers</li>
+ <li>
+     <input type="checkbox" checked name="type" value="Jeanz ">Jeanz </li>
+
+</ul>
+<div style="border-top:1px solid #ccc;padding: 5px;clear:both;text-align:center ">
+ <button class="applay" id="typebtn"  >Applay</button>
+</div>
+</div>
+
+<div   class="alltype filtersort filteritem"  id="allsorts" style="left: 40%;"> 
+ <div style="padding: 10px;border-bottom:2px solid #ccc;position: relative;;">
+<i>1 selected</i>
+<span  class="selectall">All</span>
+
+</div>
+<ul style="padding: 0;">
+<li  ><input type="checkbox" checked>Default
+</li>
+<li   > 
+ <input type="checkbox">Popularity
+  </li>
+
+
+<li>  <input type="checkbox">Average rating
+  </li>
+<li>
+ <input type="checkbox">Newness
+  </li>
+
+<span style="width: 100%;" >price:
+</span> 
+<li>
+
+
+ <input type="radio" name="order" value="lth" checked>
+    Low to High
+  </li>
+<li>
+ 
+ <input type="radio" name="order" value="htl">
+  High to Low
+    </li>
+  
+ 
+  
+</ul>
+<div style="border-top:1px solid #ccc;padding: 5px;clear:both;text-align:center ">
+<button class="applay"    >Applay</button>
+</div>
+</div>
+
+
+<div   class="alltype filterprice filteritem" id="allprices" style="left: 60%;"> 
+<div style="padding: 10px;border-bottom:2px solid #ccc;position: relative;;">
+<label for="amount">Price range selected:</label> 
+
+<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+<span  class="selectall">All</span>
+
+
+</div>
+
+
+
+<div style="margin-top:10px"> <i>30$</i><span  style="float:right">300$</span>  </div>
+
+<div id="slider-range" style="margin-bottom:10px;overflow:initial" ></div>
+
+<div style="border-top:1px solid #ccc;padding: 5px;clear:both;text-align:center ">
+<button class="applay"  id="pricebtn"  >Applay</button>
+</div>
+
+
+
+</div>
+ 
+ 
+ <div   class="alltype filtersize filteritem"  id="allsizes" style="left: 70%;"> 
+ <div style="padding: 10px;border-bottom:2px solid #ccc;position: relative;;">
+<i>1 selected</i>
+<span  class="selectall">All</span>
+
+</div>
+<ul style="padding: 0;list-style-type:none;overflow:hidden">
+
+<li style="text-align:center;     width:46%;margin:2%;float:left"><input type="checkbox" name="size" value="m" checked>M</li>    
+ <li style="text-align:center;width:46%;margin:2%;float:left"><input type="checkbox" name="size" value="xl">XL</li>    
+  <li style="text-align:center;width:46%;margin:2%;float:left "><input type="checkbox" name="size" value="xxl">XXL</li>   
+    <li style="text-align:center;float:left;width:46%;margin:2%"><input type="checkbox" name="size" value="s">S</li>
+</ul>
+<div style="border-top:1px solid #ccc;padding: 5px;clear:both;text-align:center ">
+<button class="applay"   id="sizebtn" >Applay</button>
+</div>
+</div>
+ 
+</div> 
+ 
+
+<script>
+ 
+ $(".filtercolor").hover(function(){
+    $(this).css("z-index","1");
+
+  }
+
+  ); 
+</script>
